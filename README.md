@@ -1,6 +1,6 @@
 # Auto Programming with Ollama Based on Test Results
 
-## Objective
+## Initial Objective
 
 This tool automates code creation and correction by analyzing test results. For example:
 
@@ -8,6 +8,12 @@ This tool automates code creation and correction by analyzing test results. For 
 - The auto-coder will then:
   - Create the route, controller, and view.
   - Inspect migrations and models to determine if a database table already exists or needs to be created.
+ 
+With this, you only need code the tests and the autocoder make all the other things for you.
+
+## To the future
+
+ - The autocoder learn all your existent project and improve this, make corrections, add features and make commits, only with your prompt! 
 
 This approach enables incremental, test-driven automatic programming with Laravel.
 
@@ -21,10 +27,8 @@ This approach enables incremental, test-driven automatic programming with Larave
    ```bash
    ollama create meu-modelo -f Modelfile
 
-2. Run the auto-coding script
-
-Use the Python script to send instructions and automatically fix errors based on failing tests:
-
+2. **Run the auto-coding script**
+```bash
 python ollama_cmd.py --user "Corrija o erro no arquivo X.php conforme os testes falharam."
 Notes
 
