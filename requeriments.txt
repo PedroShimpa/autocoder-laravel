@@ -1,2 +1,0 @@
-OLLAMA_MODEL=deepseek-coder:6.7b
-OLLAMA_ENDPOINT=http://localhost:11434
